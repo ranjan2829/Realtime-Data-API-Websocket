@@ -1,6 +1,7 @@
 tensorflow 
 pandas 
 dvc
+box
 notebook 
 numpy 
 matplotlib
