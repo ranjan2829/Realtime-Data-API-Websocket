@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/Life/__init__.py
+src/Life.egg-info/PKG-INFO
+src/Life.egg-info/SOURCES.txt
+src/Life.egg-info/dependency_links.txt
+src/Life.egg-info/top_level.txt
+src/Life/components/__init__.py
+src/Life/config/__init__.py
+src/Life/config/configuration.py
+src/Life/constants/__init__.py
+src/Life/entity/__init__.py
+src/Life/pipeline/__init__.py
+src/Life/utils/__init__.py
+src/Life/utils/commons.py
