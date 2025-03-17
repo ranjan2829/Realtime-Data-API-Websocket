@@ -1,0 +1,35 @@
+<!-- src/public/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Query Interface</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        textarea { width: 100%; height: 100px; margin: 10px 0; }
+        #response { white-space: pre-wrap; margin-top: 20px; }
+        button { padding: 8px 16px; }
+    </style>
+</head>
+<body>
+    <h1>RAG Query Interface</h1>
+    <textarea id="query" placeholder="Enter your query here..."></textarea>
+    <button onclick="submitQuery()">Submit Query</button>
+    <div id="response"></div>
+
+    <script>
+        async function submitQuery() {
+            const query = document.getElementById('query').value;
+            const responseDiv = document.getElementById('response');
+            
+            try {
+                const response = await fetch(`/api/query?q=${encodeURIComponent(query)}`);
+                const data = await response.json();
+                if (data.error) throw new Error(data.error);
+                responseDiv.textContent = data.response;
+            } catch (error) {
+                responseDiv.textContent = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
