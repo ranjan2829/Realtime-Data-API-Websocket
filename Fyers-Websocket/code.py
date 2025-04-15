@@ -9,8 +9,7 @@ state = "sample_state"
 grant_type = "authorization_code"  
 
 # The authorization code received from Fyers after the user grants access
-auth_code = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfaWQiOiJRR1A2TU82VUpRIiwidXVpZCI6IjlhNWMyMzk3MzRjOTRiZTM5ZDIyYWQ0MTZiMDRmYzU1IiwiaXBBZGRyIjoiIiwibm9uY2UiOiIiLCJzY29wZSI6IiIsImRpc3BsYXlfbmFtZSI6IlhSMjAxODUiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJkZWNhY2RhZDNmNzdjMGNkYTE0OThlNzY1MzdiMTMyYjcxNGMyZTg0NmQzNDFmMmZiYzkzZmY1YSIsImlzRGRwaUVuYWJsZWQiOiJOIiwiaXNNdGZFbmFibGVkIjoiTiIsImF1ZCI6IltcImQ6MVwiLFwiZDoyXCIsXCJ4OjBcIixcIng6MVwiLFwieDoyXCJdIiwiZXhwIjoxNzQ0NzQ4NjY1LCJpYXQiOjE3NDQ3MTg2NjUsImlzcyI6ImFwaS5sb2dpbi5meWVycy5pbiIsIm5iZiI6MTc0NDcxODY2NSwic3ViIjoiYXV0aF9jb2RlIn0.4Lz9g--SVigZWtdEZosqQfFOmyXSQhK21rzwhhWHoFw"
-
+auth_code = ""
 # Create a session object to handle the Fyers API authentication and token generation
 session = fyersModel.SessionModel(
     client_id=client_id,
