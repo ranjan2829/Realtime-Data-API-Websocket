@@ -1,0 +1,2 @@
+{"level":"ERROR","location":"[On_error:390] tbt_ws","message":"Connection to remote host was lost.","timestamp":"2025-04-16 10:44:16,758+0530","service":"FyersTbtSocket"}
+{"level":"ERROR","location":"[__init_connection:551] tbt_ws","message":"can't create new thread at interpreter shutdown","timestamp":"2025-04-16 10:44:21,775+0530","service":"FyersTbtSocket"}
