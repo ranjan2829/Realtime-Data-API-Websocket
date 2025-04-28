@@ -4,7 +4,7 @@ import pandas as pd
 import pytz
 
 client_id = "QGP6MO6UJQ-100"
-access_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiZDoxIiwiZDoyIiwieDowIiwieDoxIiwieDoyIl0sImF0X2hhc2giOiJnQUFBQUFCb0FRZnoxSzN1RzBGN3luUmwteUNzekhVaHJBMFdsMTFybjBmMEY5WHV1LXg2QXBMNGlhQVU5VFhZc01zdkd6X2sxWnlhT2dLVWEwUjRpcWt1QTdIRlFfV3NaaGdaZ292c3BuV0Q0ck9kNUZWcWRBWT0iLCJkaXNwbGF5X25hbWUiOiIiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJkZWNhY2RhZDNmNzdjMGNkYTE0OThlNzY1MzdiMTMyYjcxNGMyZTg0NmQzNDFmMmZiYzkzZmY1YSIsImlzRGRwaUVuYWJsZWQiOiJOIiwiaXNNdGZFbmFibGVkIjoiTiIsImZ5X2lkIjoiWFIyMDE4NSIsImFwcFR5cGUiOjEwMCwiZXhwIjoxNzQ0OTM2MjAwLCJpYXQiOjE3NDQ4OTgwMzUsImlzcyI6ImFwaS5meWVycy5pbiIsIm5iZiI6MTc0NDg5ODAzNSwic3ViIjoiYWNjZXNzX3Rva2VuIn0.Hhv5niESQJs0Vlzw8Uyr98EUR2puvxgH6qOO2XK4iR0"
+access_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiZDoxIiwiZDoyIiwieDowIiwieDoxIiwieDoyIl0sImF0X2hhc2giOiJnQUFBQUFCb0R2WnNiQXlNeTNwSnpLZDgwY3pteUJTek5ET2xNLXd3cVg5cVNPRWhxOGxkdzgxR2hqcXppMmU3cS1mVTZhcWxlRm5uY3UtcjNxRzVDdmthdHQ1TUUtMUJCQWN2UG9hMVhoMEtMVk5lMDYxci1CZz0iLCJkaXNwbGF5X25hbWUiOiIiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiJkZWNhY2RhZDNmNzdjMGNkYTE0OThlNzY1MzdiMTMyYjcxNGMyZTg0NmQzNDFmMmZiYzkzZmY1YSIsImlzRGRwaUVuYWJsZWQiOiJOIiwiaXNNdGZFbmFibGVkIjoiTiIsImZ5X2lkIjoiWFIyMDE4NSIsImFwcFR5cGUiOjEwMCwiZXhwIjoxNzQ1ODg2NjAwLCJpYXQiOjE3NDU4MTEwNTIsImlzcyI6ImFwaS5meWVycy5pbiIsIm5iZiI6MTc0NTgxMTA1Miwic3ViIjoiYWNjZXNzX3Rva2VuIn0.d05XbKJGBlwRoj_lQDOGPlSMOym06xYt4MHsLkj0gLE"
 fyers = fyersModel.FyersModel(client_id=client_id, is_async=False, token=access_token, log_path="")
 
 # Get today's date
@@ -13,7 +13,7 @@ today = datetime.now()
 # Try with a different resolution and date format to debug
 history_data = {
     "symbol": "NSE:NIFTY50-INDEX",
-    "resolution": "1",  # 5 second candles
+    "resolution": "1D",  # 5 second candles
     "date_format": "1",  # Using date format 1 for YYYY-MM-DD
     "range_from": "2025-04-07",
     "range_to": "2025-04-17",
